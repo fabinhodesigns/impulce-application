@@ -9,3 +9,5 @@
 * Vipes
 * Prisma
 * Socket
+
+**Em breve versão mobile...**

@@ -4,8 +4,8 @@
 
 **Foram utilziadas as tecnologias:**
 
-**React**
-**TypeScript**
-**Vipes**
-**Prima**
-**Socket**
+* React
+* TypeScript
+* Vipes
+* Prima
+* Socket

@@ -2,7 +2,6 @@
     background: #1b1b1f;
     padding: 24px;
     align-self: center;
-    border-radius: 20px;
 
     display: flex;
     flex-direction: column;
@@ -12,7 +11,7 @@
     position: relative;
 }
 
-.signButton {
+.signOutButton {
     background: transparent;
     border: 0;
     color: #c4c4cc;
@@ -35,7 +34,7 @@
 
     .userImage {
         padding: 3px;
-        background: linear-gradient(100deg, #ff008e 0.48%, #ffcd1e 100%);
+        background: linear-gradient(100deg, #ff008e 0%, #ffcd1e 100%);
         border-radius: 50%;
         line-height: 0;
 
@@ -70,7 +69,7 @@
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    margin-top: 48;
+    margin-top: 48px;
 
     background: #202024;
 
@@ -87,7 +86,7 @@
         border: 0;
         padding: 24px;
         resize: none;
-        height: 160;
+        height: 160px;
         color: #e1e1e6;
         font-size: 16px;
         line-height: 24px;
@@ -103,9 +102,9 @@
 
     button {
         align-self: flex-end;
+        border: 0;
         background: #ff008e;
         margin: 24px;
-        border: 0;
         cursor: pointer;
         padding: 0 32px;
         height: 40px;

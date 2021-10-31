@@ -7,5 +7,5 @@
 * React
 * TypeScript
 * Vipes
-* Prima
+* Prisma
 * Socket

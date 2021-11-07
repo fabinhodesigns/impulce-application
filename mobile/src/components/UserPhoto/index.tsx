@@ -1,5 +1,9 @@
 import React from "react";
-import { Image } from 'react-native'
+import { Image } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
+import { COLORS } from "../../theme";
+
+import avatarImg from '../../assets/avatar.png';
 
 import { styles } from './styles';
 
@@ -19,18 +23,35 @@ type Props = {
     sizes?: 'SMALL' | 'NORMAL';
 }
 
+const AVATAR_DEFAULT = Image.resolveAssetSource(avatarImg).uri;
+
 export function UserPhoto({ imageUri, sizes = 'NORMAL' }: Props) {
     const { containerSize, avatarSize } = SIZES[sizes];
 
     return (
-        <Image source={{ uri: 'https://github.com/fabinho070.png' }}
+        <LinearGradient
+            start={{ x: 0, y: 0.8 }}
+            end={{ x: 0.9, y: 0.1 }}
+            colors={[COLORS.PINK, COLORS.YELLOW]}
             style={[
-                styles.avatar,
+                styles.container,
                 {
-                    width: avatarSize,
+                    width: containerSize,
                     height: avatarSize,
                     borderRadius: avatarSize / 2
                 }
-            ]} />
+            ]}
+        >
+
+            <Image source={{ uri: imageUri || AVATAR_DEFAULT }}
+                style={[
+                    styles.avatar,
+                    {
+                        width: avatarSize,
+                        height: avatarSize,
+                        borderRadius: avatarSize / 2
+                    }
+                ]} />
+        </LinearGradient>
     );
 }

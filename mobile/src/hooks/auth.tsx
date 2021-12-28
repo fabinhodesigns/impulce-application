@@ -41,7 +41,7 @@ function AuthProvider({ children }: AuthProviderProps) {
     const [user, setUser] = useState<User | null>(null);
 
     async function signIn() {
-        const authUrl = `https://github.com/login/oauth/authorize?client_id${CLIENT_ID}&scope=${SCOPE}`;
+        const authUrl = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&scope=${SCOPE}`;
         const params = await AuthSessions.startAsync({ authUrl }) as AuthorizationResponse;
         console.log(params);
     }

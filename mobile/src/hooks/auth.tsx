@@ -13,7 +13,7 @@ type User = {
 
 type AuthContextData = {
     user: User | null;
-    isSigningIng: boolean;
+    isSigningIn: boolean;
     signIn: () => Promise<void>;
     signOut: () => Promise<void>;
 }
@@ -37,13 +37,18 @@ export const AuthContext = createContext({} as AuthContextData)
 
 function AuthProvider({ children }: AuthProviderProps) {
 
-    const [isSigningIng, setIsSigningIng] = useState(false);
+    const [isSigningIn, setIsSigningIn] = useState(false);
     const [user, setUser] = useState<User | null>(null);
 
     async function signIn() {
+        setIsSigningIn(true);
         const authUrl = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&scope=${SCOPE}`;
         const params = await AuthSessions.startAsync({ authUrl }) as AuthorizationResponse;
-        console.log(params);
+
+        if (params && params.code) {
+
+        }
+        setIsSigningIn(true);
     }
 
     async function signOut() {
@@ -55,7 +60,7 @@ function AuthProvider({ children }: AuthProviderProps) {
             signIn,
             signOut,
             user,
-            isSigningIng,
+            isSigningIn,
 
         }}>
             {children}

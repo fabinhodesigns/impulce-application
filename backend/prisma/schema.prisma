@@ -7,17 +7,12 @@ generator client {
   provider = "prisma-client-js"
 }
 
-//CRIANDO PELO PRISMA UMA TABELA NO BANCO DE DADOS DE USUARIO
-// O @@MAP NO FINAL É O QUE DEFINE O NOME DA TABELA NO BANCO DE DADOS
-// O @ID @DEFAULT QUER DIZER QUE ELA VAI SER UMA FORENG KEY NO BANCO, PARA RELACIONAR COM OUTRAS TABELAS
-
 model User {
   id         String @id @default(uuid())
   name       String
   github_id  Int
-  login      String
   avatar_url String
-
+  login      String
 
   messages Message[]
   @@map("users")

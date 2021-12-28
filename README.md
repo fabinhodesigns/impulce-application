@@ -11,5 +11,3 @@
 * Socket
 
 **Em breve versão mobile...**
-
-dsafasdudhgafdsghiapfghida

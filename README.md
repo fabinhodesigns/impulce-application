@@ -10,4 +10,4 @@
 * Prisma
 * Socket
 
-**Em andamento, em breve versão mobile...**
+**Em andamento, em breve versão mobile estável...**

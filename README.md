@@ -1,13 +1,17 @@
-# Nlw Impulce
+# 🎮 NLW Impulce - Ignite trail
 
-**Aplicação criada com um login ao Github e envio de mensagens com atualizações instantâneas.**
+> Ignite trail
 
-**Foram utilziadas as tecnologias:**
+Application created by logging in to Github and sending messages with instant updates.
 
-* React
-* TypeScript
-* Vipes
-* Prisma
-* Socket
+## 🛠️ Technologies
+- React
+- TypeScript
+- Vipes
+- Prisma
+- Socket
+- Git and Github
 
-**Em andamento, em breve versão mobile estável...**
+## 📞 Contact
+- freitasfabiano08@gmail.com
+- @fabinhofreitastw

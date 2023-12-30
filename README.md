@@ -14,4 +14,4 @@ Application created by logging in to Github and sending messages with instant up
 
 ## 📞 Contact
 - freitasfabiano08@gmail.com
-- @fabinhofreitastw
+- @ffabiiin
